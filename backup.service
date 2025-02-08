@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup service
+
+[Service]
+Type=oneshot
+ExecStart=rsync -avh /home/pi/pihole/ tyler@fileserver.tyler-clark.com:/mnt/backups/pihole/
