@@ -3,4 +3,4 @@ Description=Backup service
 
 [Service]
 Type=oneshot
-ExecStart=rsync -avh /home/pi/pihole/ tyler@fileserver.tyler-clark.com:/mnt/backups/pihole/
+ExecStart=/usr/bin/rsync -avh /home/pi/pihole/ fileserver@fileserver.tyler-clark.com:/mnt/backups/pihole/
